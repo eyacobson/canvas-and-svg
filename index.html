@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Evgeni">
+		<meta name="description" content="Some HTML graphics">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>HTML5 Canvas &amp; SVG</title>
+	</head>
+
+	<body>
+		<canvas id="myCanvas" width="300" height="300" style="border: 1px solid black;">
+			&lt;canvas&gt; tag is not supported in this browser!
+		</canvas>
+
+		<svg width="300" height="300" style="border: 1px solid black;">
+			<rect x="0" y="0" width="150" height="150" style="fill: blue; stroke-width: 2; stroke: white; opacity: 0.4">
+			</rect>
+
+			<rect x="150" y="0" width="150" height="150" style="fill: gray; stroke-width: 2; stroke: white; opacity: 0.4">
+			</rect>
+
+			<rect x="0" y="150" width="150" height="150" style="fill: maroon; stroke-width: 2; stroke: white; opacity: 0.4">
+			</rect>
+
+			<rect x="150" y="150" width="150" height="150" style="fill: aqua; stroke-width: 2; stroke: white; opacity: 0.4">
+			</rect>
+
+			Your browser does not support the &lt;svg&gt; tag.
+		</svg>
+
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var context = canvas.getContext("2d");
+			context.globalAlpha = 0.4;
+
+			context.beginPath();
+			context.rect(0, 0, 150, 150);
+			context.fillStyle = "blue";
+			context.fill();
+			context.lineWidth = 2;
+			context.strokeStyle = "white";
+			context.stroke();
+
+			context.beginPath();
+			context.rect(150, 0, 150, 150);
+			context.fillStyle = "gray";
+			context.fill();
+			context.lineWidth = 2;
+			context.strokeStyle = "white";
+			context.stroke();
+
+			context.beginPath();
+			context.rect(0, 150, 150, 150);
+			context.fillStyle = "maroon";
+			context.fill();
+			context.lineWidth = 2;
+			context.strokeStyle = "white";
+			context.stroke();
+
+			context.beginPath();
+			context.rect(150, 150, 150, 150);
+			context.fillStyle = "aqua";
+			context.fill();
+			context.lineWidth = 2;
+			context.strokeStyle = "white";
+			context.stroke();
+		</script>
+	</body>
+</html>
