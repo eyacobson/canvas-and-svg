@@ -1,2 +1,2 @@
-# &lt;canvas&gt; & Scalable Vector Graphics (SVG)
-Playing around with creating two identical graphics: one using &lt;canvas&gt; & one using SVG.
+# `<canvas>` & Scalable Vector Graphics (SVG)
+Playing around with creating two identical graphics: one using `<canvas>` & one using SVG.
